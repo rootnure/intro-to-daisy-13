@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisy Khala</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <h1>I explored Tailwind</h1>
+    <h3>Now I wand to see may khala, none other than daisy khala</h3>
+    <button>Click Me</button>
+    <button class="btn">Click Me</button>
+    <button class="btn btn-primary">Click Me</button>
+    <button class="btn btn-success">Success</button>
+    <button class="btn btn-warning">Warning</button>
+
+    <!-- carousel -->
+    <section>
+        <div class="carousel w-full">
+            <div id="item1" class="carousel-item w-full">
+              <img src="./images/carousel-1.jpg" class="w-full" />
+            </div> 
+            <div id="item2" class="carousel-item w-full">
+              <img src="./images/carousel-2.jpg" class="w-full" />
+            </div> 
+            <div id="item3" class="carousel-item w-full">
+              <img src="./images/carousel-3.jpg" class="w-full" />
+            </div> 
+            <div id="item4" class="carousel-item w-full">
+              <img src="./images/carousel-4.jpg" class="w-full" />
+            </div>
+          </div> 
+          <div class="flex justify-center w-full py-2 gap-2">
+            <a href="#item1" class="btn btn-xs">1</a> 
+            <a href="#item2" class="btn btn-xs">2</a> 
+            <a href="#item3" class="btn btn-xs">3</a> 
+            <a href="#item4" class="btn btn-xs">4</a>
+          </div>
+    </section>
+
+    <!-- accordion -->
+    <section>
+        <div class="collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+                This is the question number 1
+            </div>
+            <div class="collapse-content">
+                <p>This is the answer for question number 1</p>
+            </div>
+        </div>
+        <div class="collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">
+                This is the question number 2
+            </div>
+            <div class="collapse-content">
+                <p>This is the answer for question number 2</p>
+            </div>
+        </div>
+        <div class="collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">
+                This is the question number 3
+            </div>
+            <div class="collapse-content">
+                <p>This is the answer for question number 3</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- loading -->
+    <section>
+        <span class="loading loading-spinner loading-md"></span>
+    </section>
+    <!-- my shoes -->
+    <section>
+        <div>
+            <!-- first shoe -->
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="./images/shoe.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">
+                        Shoes!
+                        <div class="badge badge-secondary">NEW</div>
+                    </h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                        <div class="badge badge-outline">Fashion</div>
+                        <div class="badge badge-outline">Products</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- mask -->
+    <section>
+        <img class="mask mask-heart" src="./images/image.jpg" />
+    </section>
+
+    <!-- hero: banner -->
+    <section>
+        <div class="hero min-h-screen"
+            style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hero: login -->
+    <section>
+        <div class="hero min-h-screen bg-base-200">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-5xl font-bold">Login now!</h1>
+                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                </div>
+                <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <div class="card-body">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Email</span>
+                            </label>
+                            <input type="text" placeholder="email" class="input input-bordered" />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Password</span>
+                            </label>
+                            <input type="text" placeholder="password" class="input input-bordered" />
+                            <label class="label">
+                                <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                            </label>
+                        </div>
+                        <div class="form-control mt-6">
+                            <button class="btn btn-primary">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
